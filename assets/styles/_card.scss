@@ -1,0 +1,57 @@
+$description-color: $secondary-text-color;
+$title-color: $primary-text-color;
+
+.cards__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  @include just-tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include just-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.card {
+  background-color: #68b3e9;
+  border-radius: $border-radius * 2;
+  box-sizing: border-box;
+  padding: 3.2rem;
+
+  @include just-tablet {
+    width: 30%;
+  }
+
+  @include just-desktop {
+    width: calc(20% - 40px);
+  }
+
+  &--shadow {
+    @extend  .card;
+    box-shadow: 0 5px 10px 0 rgba(#000, 0.1);
+  }
+
+  &__icon {
+    margin: 2rem auto;
+    width: 7rem;
+  }
+
+  &__title {
+    @include font();
+    color: $title-color;
+    font-size: 2.4rem;
+  }
+
+  &__description {
+    color: $description-color;
+    font-size: 1.8rem;
+  }
+}

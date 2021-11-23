@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova/ProximaNova.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNova/ProximaNovaBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("../fonts/ProximaNova/ProximaNovaLight.otf") format("opentype");
+}
+.font-light {
+  font-family: "ProximaNovaLight" !important;
+}
+
+.font-bold {
+  font-family: "ProximaNovaBold" !important;
+}
+
+.font-regular {
+  font-family: "ProximaNova" !important;
+}
+
+.cards__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .cards__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1024px) {
+  .cards__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.card, .card--shadow {
+  background-color: #68b3e9;
+  border-radius: 1.6rem;
+  box-sizing: border-box;
+  padding: 3.2rem;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .card, .card--shadow {
+    width: 30%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .card, .card--shadow {
+    width: calc(20% - 40px);
+  }
+}
+.card--shadow {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card__icon {
+  margin: 2rem auto;
+  width: 7rem;
+}
+.card__title {
+  font-family: "ProximaNova" !important;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 2.4rem;
+}
+.card__description {
+  color: rgba(230, 230, 230, 0.83);
+  font-size: 1.8rem;
+}
+
+.city-temperature__title {
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 3.2rem;
+  margin-top: 0;
+}
+.city-temperature__current-day {
+  color: rgba(230, 230, 230, 0.83);
+  font-size: 2.4rem;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  padding: 0.4rem 0;
+}
+.info__icon {
+  width: 2.4rem;
+}
+.info__description {
+  color: rgba(230, 230, 230, 0.83);
+  font-size: 1.8rem;
+}
+
+.margin-8 {
+  margin: 8px;
+}
+.margin-top-8 {
+  margin-top: 8px;
+}
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+.margin-left-8 {
+  margin-left: 8px;
+}
+.margin-right-8 {
+  margin-right: 8px;
+}
+.margin-horizontal-8 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.margin-vertical-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.margin-16 {
+  margin: 16px;
+}
+.margin-top-16 {
+  margin-top: 16px;
+}
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+.margin-left-16 {
+  margin-left: 16px;
+}
+.margin-right-16 {
+  margin-right: 16px;
+}
+.margin-horizontal-16 {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.margin-vertical-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.margin-24 {
+  margin: 24px;
+}
+.margin-top-24 {
+  margin-top: 24px;
+}
+.margin-bottom-24 {
+  margin-bottom: 24px;
+}
+.margin-left-24 {
+  margin-left: 24px;
+}
+.margin-right-24 {
+  margin-right: 24px;
+}
+.margin-horizontal-24 {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.margin-vertical-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.margin-32 {
+  margin: 32px;
+}
+.margin-top-32 {
+  margin-top: 32px;
+}
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}
+.margin-left-32 {
+  margin-left: 32px;
+}
+.margin-right-32 {
+  margin-right: 32px;
+}
+.margin-horizontal-32 {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.margin-vertical-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.margin-40 {
+  margin: 40px;
+}
+.margin-top-40 {
+  margin-top: 40px;
+}
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+.margin-left-40 {
+  margin-left: 40px;
+}
+.margin-right-40 {
+  margin-right: 40px;
+}
+.margin-horizontal-40 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.margin-vertical-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.margin-48 {
+  margin: 48px;
+}
+.margin-top-48 {
+  margin-top: 48px;
+}
+.margin-bottom-48 {
+  margin-bottom: 48px;
+}
+.margin-left-48 {
+  margin-left: 48px;
+}
+.margin-right-48 {
+  margin-right: 48px;
+}
+.margin-horizontal-48 {
+  margin-right: 48px;
+  margin-left: 48px;
+}
+.margin-vertical-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.margin-56 {
+  margin: 56px;
+}
+.margin-top-56 {
+  margin-top: 56px;
+}
+.margin-bottom-56 {
+  margin-bottom: 56px;
+}
+.margin-left-56 {
+  margin-left: 56px;
+}
+.margin-right-56 {
+  margin-right: 56px;
+}
+.margin-horizontal-56 {
+  margin-right: 56px;
+  margin-left: 56px;
+}
+.margin-vertical-56 {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.margin-64 {
+  margin: 64px;
+}
+.margin-top-64 {
+  margin-top: 64px;
+}
+.margin-bottom-64 {
+  margin-bottom: 64px;
+}
+.margin-left-64 {
+  margin-left: 64px;
+}
+.margin-right-64 {
+  margin-right: 64px;
+}
+.margin-horizontal-64 {
+  margin-right: 64px;
+  margin-left: 64px;
+}
+.margin-vertical-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.margin-72 {
+  margin: 72px;
+}
+.margin-top-72 {
+  margin-top: 72px;
+}
+.margin-bottom-72 {
+  margin-bottom: 72px;
+}
+.margin-left-72 {
+  margin-left: 72px;
+}
+.margin-right-72 {
+  margin-right: 72px;
+}
+.margin-horizontal-72 {
+  margin-right: 72px;
+  margin-left: 72px;
+}
+.margin-vertical-72 {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+.margin-80 {
+  margin: 80px;
+}
+.margin-top-80 {
+  margin-top: 80px;
+}
+.margin-bottom-80 {
+  margin-bottom: 80px;
+}
+.margin-left-80 {
+  margin-left: 80px;
+}
+.margin-right-80 {
+  margin-right: 80px;
+}
+.margin-horizontal-80 {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.margin-vertical-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.search {
+  position: relative;
+}
+.search__input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0.2rem solid transparent;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  color: #fff;
+  height: 5rem;
+  outline: none;
+  padding: 0 1.6rem;
+  width: 100%;
+}
+.search__input:focus {
+  border-color: #86b2f1;
+}
+.search__suggestion {
+  background-color: #fff;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  display: none;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.search__suggestion--active {
+  display: block;
+}
+.search__item {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.search__item:hover {
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "ProximaNovaLight";
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-family: "ProximaNovaBold";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  background: #3a8dcd;
+  background: radial-gradient(circle, #3a8dcd 0%, #42a0e5 39%, #011e53 100%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 1.6rem;
+}
+
+input {
+  font-size: 1.8rem;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media all and (min-width: 768px) {
+  .temperature {
+    flex-direction: row;
+  }
+}
+.temperature__current-degree {
+  font-size: 3.2rem;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+.sun {
+  margin: 2.4rem auto;
+  width: 20rem;
+}
+
+/*# sourceMappingURL=style.css.map */

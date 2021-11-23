@@ -1,0 +1,67 @@
+@import "index";
+
+$container-padding: $padding;
+$temperature-current-degree-color: $primary-text-color;
+$sun-size: 20rem;
+
+html {
+  font-size: 62.5%;
+  font-family: 'ProximaNovaLight';
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-family: 'ProximaNovaBold';
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  background: rgb(58, 141, 205);
+  background: radial-gradient(circle, rgba(58,141,205,1) 0%, rgba(66,160,229,1) 39%, rgba(1,30,83,1) 100%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: $container-padding;
+}
+
+input {
+  font-size: 1.8rem;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet-desktop {
+    flex-direction: row;
+  }
+
+  &__current-degree {
+    font-size: 3.2rem;
+    color: $temperature-current-degree-color;
+  }
+}
+
+.sun {
+  margin: 2.4rem auto;
+  width: $sun-size;
+}

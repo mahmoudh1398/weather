@@ -1,0 +1,9 @@
+$text-direction: (left, center, right);
+
+.text {
+  @each $dir in $text-direction {
+    &-#{$dir} {
+      text-align: $dir;
+    }
+  }
+}
