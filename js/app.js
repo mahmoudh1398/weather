@@ -72,7 +72,6 @@ function loadSuggestions(cities) {
         element.classList.add('search__item');
         element.onclick = () => selectCity(city);
         element.innerText = city.name;
-        // element.style.cursor = 'pointer';
         ul.appendChild(element);
     });
     suggestionElement.appendChild(ul);
@@ -115,6 +114,11 @@ function changeCurrentweatherInfo(weather) {
 }
 
 function changeFiveDays(weathers) {
-    // weathers.filter((i, index) => index % 8 === 0)
+    const cardsEl = document.querySelector('.cards__wrapper').children;
+    const fiveDaysforecast = weathers.list.filter((item, index) => index % 8 === 0);
+    for (let i = 0; i < fiveDaysforecast.length; i++) {
+        cardsEl[i].children[1].innerHTML = moment(fiveDaysforecast[i].dt, 'X').format('dddd');
+        cardsEl[i].children[0].children[0].src = `http://openweathermap.org/img/wn/${fiveDaysforecast[i].weather[0].icon}@2x.png`;
+        cardsEl[i].children[2].innerHTML = `${Math.round(fiveDaysforecast[i].main.temp)}&#8451;`;
+    }
 }
-
